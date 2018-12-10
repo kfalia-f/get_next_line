@@ -1,22 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoinre.c                                     :+:      :+:    :+:   */
+/*   ft_strexist.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kfalia-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/06 17:22:37 by kfalia-f          #+#    #+#             */
-/*   Updated: 2018/12/10 18:53:04 by kfalia-f         ###   ########.fr       */
+/*   Created: 2018/12/10 15:10:29 by kfalia-f          #+#    #+#             */
+/*   Updated: 2018/12/10 15:15:06 by kfalia-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoinre(char *s1, const char *s2)
+int		ft_strexist(char *s)
 {
-	char	*s;
+	int i;
 
-	s = ft_strjoin(s1, s2);
-	free(s1);
-	return (s);
+	i = 0;
+	while (s[i])
+	{
+		if (ft_isalnum(s[i]))
+			return (1);
+		i++;
+	}
+	return (0);
 }

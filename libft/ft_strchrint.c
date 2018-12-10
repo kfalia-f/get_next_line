@@ -1,22 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoinre.c                                     :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kfalia-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/06 17:22:37 by kfalia-f          #+#    #+#             */
-/*   Updated: 2018/12/10 18:53:04 by kfalia-f         ###   ########.fr       */
+/*   Created: 2018/11/27 15:53:25 by kfalia-f          #+#    #+#             */
+/*   Updated: 2018/12/10 19:11:13 by kfalia-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
-char	*ft_strjoinre(char *s1, const char *s2)
+int		ft_strchrint(const char *str, int ch)
 {
 	char	*s;
+	int		i;
 
-	s = ft_strjoin(s1, s2);
-	free(s1);
-	return (s);
+	i = 0;
+	s = (char*)str;
+	while (s[i] != ch)
+	{
+		if (s[i] == '\0')
+			return (0);
+		i++;
+	}
+	return (i);
 }

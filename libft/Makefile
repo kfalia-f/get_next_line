@@ -6,7 +6,7 @@
 #    By: kfalia-f <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/20 15:09:14 by kfalia-f          #+#    #+#              #
-#    Updated: 2018/12/06 17:39:56 by kfalia-f         ###   ########.fr        #
+#    Updated: 2018/12/10 19:07:42 by kfalia-f         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,7 +71,10 @@ SOURCE =	ft_atoi.c \
 			ft_lstiter.c \
 			ft_lstmap.c \
 			ft_lstadd.c \
-			ft_strjoinre.c
+			ft_strjoinre.c \
+			ft_strexist.c \
+			ft_strsplitgnl.c \
+			ft_strchrint.c
 
 OBJ = $(SOURCE:.c=.o)
 
