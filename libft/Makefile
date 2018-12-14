@@ -6,7 +6,7 @@
 #    By: kfalia-f <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/20 15:09:14 by kfalia-f          #+#    #+#              #
-#    Updated: 2018/12/13 17:04:09 by kfalia-f         ###   ########.fr        #
+#    Updated: 2018/12/14 15:36:02 by kfalia-f         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,12 +79,14 @@ SOURCE =	ft_atoi.c \
 
 OBJ = $(SOURCE:.c=.o)
 
+INCLUDES = includes/libft.h
+
 FLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@gcc -c $(FLAGS) libft.h $(SOURCE)
+	@gcc -c $(FLAGS) -I $(INCLUDES) $(SOURCE)
 	@ar rc $(NAME) $(OBJ)
 
 clean: 

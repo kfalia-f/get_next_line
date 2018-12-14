@@ -6,12 +6,12 @@
 /*   By: kfalia-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/24 14:19:15 by kfalia-f          #+#    #+#             */
-/*   Updated: 2018/11/30 20:50:47 by kfalia-f         ###   ########.fr       */
+/*   Updated: 2018/12/14 15:41:10 by kfalia-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "libft.h"
+#include "includes/libft.h"
 
 char	*ft_strtrim(char const *s)
 {

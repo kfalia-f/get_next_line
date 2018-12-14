@@ -6,12 +6,12 @@
 /*   By: kfalia-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/27 14:54:20 by kfalia-f          #+#    #+#             */
-/*   Updated: 2018/11/30 18:36:38 by kfalia-f         ###   ########.fr       */
+/*   Updated: 2018/12/14 15:38:56 by kfalia-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "libft.h"
+#include "includes/libft.h"
 
 char	*ft_strcat(char *dst, const char *app)
 {
