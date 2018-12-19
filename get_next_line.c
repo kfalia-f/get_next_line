@@ -6,7 +6,7 @@
 /*   By: kfalia-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/12 17:59:13 by kfalia-f          #+#    #+#             */
-/*   Updated: 2018/12/18 20:18:01 by kfalia-f         ###   ########.fr       */
+/*   Updated: 2018/12/19 15:47:31 by kfalia-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int		get_next_line(const int fd, char **line)
 	int			ret;
 	char		buf[BUFF_SIZE + 1];
 
-	if (fd < 0 || !line || BUFF_SIZE <= 0|| ((ret = read(fd, buf, 0)) < 0))
+	if (fd < 0 || !line || BUFF_SIZE <= 0 || ((ret = read(fd, buf, 0)) < 0))
 		return (-1);
 	if (a[fd] == NULL)
 		if ((a[fd] = ft_strnew(0)) == NULL)
